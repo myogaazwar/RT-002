@@ -3,6 +3,7 @@ import Jumbotron from '../components/jumbotron/Jumbotron';
 import Kegiatan from '../components/kegiatan/Kegiatan';
 import Tentang from '../components/tentang/Tentang';
 import Galeri from '../components/galeri/Galeri';
+import Footer from '../components/footer/Footer';
 
 export const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ export const HomePage = () => {
 
       <Tentang />
       <Galeri />
+      <Footer />
     </section>
   );
 };
