@@ -44,7 +44,7 @@ export const Navbar = () => {
             </IconContainer>
             Tentang
           </NavItem>
-          <NavItem to={'#'}>
+          <NavItem to={'galeri'}>
             <IconContainer>
               <GrGallery />
             </IconContainer>
