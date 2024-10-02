@@ -34,3 +34,8 @@
   font-weight: 800;
   font-style: normal;
 }
+
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  color: orange !important;
+}
