@@ -4,7 +4,7 @@ import imgJumbotron from '/jumbotron/imgJumbotron.jpg';
 
 const Jumbotron = () => {
   return (
-    <section id={'home'} className='h-full mt-5 eb-garamond-medium py-10'>
+    <section id={'home'} className='h-full  eb-garamond-medium pb-20 pt-2'>
       <div className='flex flex-col-reverse mt-5 gap-y-10'>
         <div className=' text-center flex flex-col gap-y-5'>
           <div className='text-4xl'>
