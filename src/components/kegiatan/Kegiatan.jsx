@@ -6,7 +6,7 @@ import { semuaKegiatan } from '../../data/data';
 
 const Kegiatan = () => {
   return (
-    <section id={'kegiatan'} className='h-[1200px] eb-garamond-medium '>
+    <section id={'kegiatan'} className='h-[1200px] eb-garamond-medium mt-10 '>
       <main>
         <div>
           <h2 className='text-2xl text-center'>KEGIATAN</h2>
