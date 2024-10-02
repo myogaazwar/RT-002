@@ -2,6 +2,7 @@ import React from 'react';
 import Jumbotron from '../components/jumbotron/Jumbotron';
 import Kegiatan from '../components/kegiatan/Kegiatan';
 import Tentang from '../components/tentang/Tentang';
+import Galeri from '../components/galeri/Galeri';
 
 export const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ export const HomePage = () => {
       </section>
 
       <Tentang />
+      <Galeri />
     </section>
   );
 };
