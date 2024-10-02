@@ -30,7 +30,7 @@ const Accordion = ({
             : ' opacity-0 max-h-0 transition-all duration-300 ease-in-out'
         }  text-slate-500 text-sm text-justify overflow-hidden   `}
       >
-        {typeof description === 'object' ? (
+        {typeof description === 'object' && description.visi ? (
           <div className='pt-2'>
             <p>
               <strong>Visi:</strong>
@@ -43,6 +43,16 @@ const Accordion = ({
 
             <ol className='list-disc list-inside '>
               {description.misi.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ol>
+          </div>
+        ) : typeof description === 'object' && description.body ? (
+          <div className='pt-2'>
+            <p>{description.heading}</p>
+
+            <ol className='list-disc list-inside mt-2'>
+              {description.body.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ol>
