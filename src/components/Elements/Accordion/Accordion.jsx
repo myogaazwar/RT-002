@@ -1,5 +1,6 @@
 import React from 'react';
 import { LuPlusCircle } from 'react-icons/lu';
+import { LuMinusCircle } from 'react-icons/lu';
 
 const Accordion = ({
   showAccordion,
@@ -15,7 +16,11 @@ const Accordion = ({
     >
       <div className='flex items-center justify-between'>
         <h3>{title}</h3>
-        <LuPlusCircle className='text-xl' />
+        {showAccordion === id ? (
+          <LuMinusCircle className='text-xl' />
+        ) : (
+          <LuPlusCircle className='text-xl' />
+        )}
       </div>
 
       <div
