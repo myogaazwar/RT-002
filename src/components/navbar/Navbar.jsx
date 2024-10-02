@@ -58,7 +58,7 @@ export const Navbar = () => {
             openDropdown === 'tentang'
               ? ' opacity-100 translate-x-12 -translate-y-16 h-16   '
               : 'opacity-0 translate-x-12 translate-y-0 h-16  '
-          } md:hidden absolute mb-2 bg-main-color rounded-b-2xl rounded-t-xl w-40  transition duration-400 ease-linear transform  `}
+          } md:hidden absolute mb-2 bg-main-color rounded-b-2xl rounded-t-xl w-40  transition duration-400 ease-linear transform border-t-2 border-r-2 border-l-2 border-black  `}
         >
           <ul className='text-center py-2'>
             <li>
