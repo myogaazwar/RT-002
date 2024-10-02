@@ -14,7 +14,7 @@ const Tentang = () => {
   };
 
   return (
-    <section id={'tentang'} className='h-full eb-garamond-medium mt-10'>
+    <section id={'tentang'} className='h-full eb-garamond-medium mt-32'>
       <main className='bg-main-color py-5 px-8 flex flex-col gap-y-10'>
         <div>
           <h2 className=' text-center text-2xl eb-garamond-bold'>
