@@ -41,6 +41,35 @@ const tentangKami = [
       ],
     },
   },
+
+  {
+    id: '3',
+    title: 'FASILITAS',
+    description: {
+      heading:
+        'RT002 memiliki beberapa fasilitas yang digunakan oleh warga, antara lain:',
+      body: [
+        'Balai Warga sebagai tempat pertemuan dan kegiatan.',
+        'Taman bermain anak-anak.',
+        'Lapangan olahraga yang digunakan untuk kegiatan kebugaran bersama.',
+        'Pos ronda untuk menjaga keamanan lingkungan.',
+      ],
+    },
+  },
+
+  {
+    id: '4',
+    title: 'PERATURAN',
+    description: {
+      heading: 'Beberapa peraturan yang berlaku di RT002 antara lain:',
+      body: [
+        'Warga wajib mengikuti kegiatan gotong royong setiap akhir pekan.',
+        'Setiap warga bertanggung jawab atas kebersihan lingkungan sekitar tempat tinggalnya.',
+        'Jam malam berlaku mulai pukul 22:00, kecuali ada kegiatan khusus yang telah disetujui oleh pengurus RT.',
+        'Dilarang membuang sampah sembarangan, disediakan tempat sampah di beberapa titik strategis.',
+      ],
+    },
+  },
 ];
 
 export { semuaKegiatan, tentangKami };
