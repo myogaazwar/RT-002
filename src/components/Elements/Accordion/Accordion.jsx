@@ -14,7 +14,7 @@ const Accordion = ({
       className='bg-white px-2 py-2 '
       onClick={() => handleShowAccordion(id)}
     >
-      <div className='flex items-center justify-between'>
+      <div className='flex items-center justify-between cursor-pointer'>
         <h3 className='md:text-xl'>{title}</h3>
         {showAccordion === id ? (
           <LuMinusCircle className='text-xl lg:text-2xl' />

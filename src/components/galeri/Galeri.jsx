@@ -13,7 +13,7 @@ const Galeri = () => {
       id={'galeri'}
       className='h-full px-8 py-2 mt-20  eb-garamond-medium max-w-desktop mx-auto'
     >
-      <h2 className='mb-5 text-center text-2xl'>GALERI</h2>
+      <h2 className='mb-5 text-center text-2xl md:text-3xl '>GALERI</h2>
       <Swiper
         navigation={true}
         modules={[Navigation]}

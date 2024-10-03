@@ -26,10 +26,10 @@ const Footer = () => {
   return (
     <section
       id={'footer'}
-      className='h-full eb-garamond-medium mt-32 bg-main-color pb-24'
+      className='h-full eb-garamond-medium mt-32 bg-main-color pb-24 '
     >
       <main className='px-8 py-2  max-w-desktop mx-auto lg:flex lg:flex-row-reverse lg:justify-between lg:gap-x-20 lg:items-center '>
-        <div className='lg:flex lg:gap-x-12'>
+        <div className='lg:flex lg:gap-x-12  '>
           <FooterItem title={'Navigasi Cepat'}>
             <a href='#'>Home</a>
             <a href='#'>Kegiatan</a>
