@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ title, image, description }) => {
+const Card = ({ title, image, description, children }) => {
   return (
     <div className=' bg-white px-3 py-4 rounded-md shadow-md  hover:scale-105 hover:shadow-lg transition-transform md:flex md:flex-col md:justify-between md:h-full'>
       <img
@@ -12,6 +12,7 @@ const Card = ({ title, image, description }) => {
         <h3 className='eb-garamond-bold md:text-lg lg:text-xl'>{title}</h3>
         <p className='text-justify text-sm lg:text-lg '>{description}</p>
       </div>
+      {children}
     </div>
   );
 };
