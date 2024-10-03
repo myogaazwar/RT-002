@@ -3,6 +3,7 @@ import React from 'react';
 import Card from '../Elements/Card/Card';
 import Button from '../Elements/Button/Button';
 import { semuaKegiatan } from '../../data/data';
+import { Link } from 'react-router-dom';
 
 const Kegiatan = () => {
   return (
@@ -17,7 +18,7 @@ const Kegiatan = () => {
           </p>
         </div>
 
-        <div className='mt-10 grid gap-y-4 md:grid-cols-3 md:gap-x-4 lg:gap-x-10'>
+        <div className='mt-10 grid gap-y-4 sm:grid-cols-2 sm:gap-x-5 md:grid-cols-3 md:gap-x-4 lg:gap-x-10'>
           {semuaKegiatan.map((kegiatan) => (
             <Card
               key={kegiatan.id}
@@ -27,7 +28,7 @@ const Kegiatan = () => {
             />
           ))}
         </div>
-        <div className='flex items-center justify-center'>
+        <Link to={'/kegiatan'} className='flex items-center justify-center'>
           <Button
             classname={
               'w-full bg-gray-200 mt-10 md:w-52 hover:scale-105 hover:bg-gray-300'
@@ -35,7 +36,7 @@ const Kegiatan = () => {
           >
             Lihat kegiatan lainnya..
           </Button>
-        </div>
+        </Link>
       </main>
     </section>
   );
