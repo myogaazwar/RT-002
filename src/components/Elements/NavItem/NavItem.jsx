@@ -1,22 +1,43 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { NavLink, useLocation } from 'react-router-dom';
 
 export const NavItem = ({ to, children, classname, onSelect }) => {
+  const location = useLocation();
+
+  if (location.pathname === '/') {
+    return (
+      <li>
+        <ScrollLink
+          to={to === 'home' ? '/' : to}
+          smooth={true}
+          duration={400}
+          spy={true}
+          hashSpy={true}
+          offset={-80}
+          activeClass='md:text-main-color text-white text-bold'
+          className={`${classname} cursor-pointer`}
+          onClick={onSelect}
+        >
+          {children}
+        </ScrollLink>
+      </li>
+    );
+  }
+
   return (
     <li>
-      <ScrollLink
-        to={to}
-        smooth={true}
-        duration={400}
-        spy={true}
-        hashSpy={true}
-        offset={-100}
-        activeClass='md:text-main-color text-white text-bold'
-        className={`${classname} cursor-pointer`}
+      <NavLink
+        to={to === 'home' ? '/' : `/${to}`}
+        className={({ isActive }) =>
+          `${classname} cursor-pointer ${
+            isActive ? ' text-bold text-white md:text-main-color' : ''
+          }`
+        }
         onClick={onSelect}
       >
         {children}
-      </ScrollLink>
+      </NavLink>
     </li>
   );
 };
