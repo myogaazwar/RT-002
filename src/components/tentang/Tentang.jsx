@@ -14,20 +14,23 @@ const Tentang = () => {
   };
 
   return (
-    <section id={'tentang'} className='h-full eb-garamond-medium mt-32'>
-      <main className='bg-main-color py-5 px-8 flex flex-col gap-y-10'>
+    <section
+      id={'tentang'}
+      className='h-full eb-garamond-medium mt-32 bg-main-color'
+    >
+      <main className=' py-5 px-8 flex flex-col gap-y-10 lg:flex-row gap-x-28 lg:py-20  lg:max-w-desktop mx-auto  '>
         <div>
-          <h2 className=' text-center text-2xl eb-garamond-bold'>
+          <h2 className=' text-center text-2xl eb-garamond-bold md:text-3xl'>
             TENTANG KAMI
           </h2>
-          <p className='text-justify mt-5'>
+          <p className='text-justify mt-5 md:text-lg'>
             RT002 adalah lingkungan yang berkomitmen menjaga kebersihan,
             keamanan, dan kerukunan antarwarga. Dengan semangat gotong royong,
             kami berusaha menciptakan suasana yang nyaman dan harmonis.`
           </p>
         </div>
 
-        <section className='flex flex-col gap-y-3'>
+        <section className='flex flex-col gap-y-3 '>
           {tentangKami &&
             tentangKami.map((tentang) => (
               <Accordion
