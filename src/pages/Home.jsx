@@ -7,8 +7,8 @@ import Footer from '../components/footer/Footer';
 
 export const HomePage = () => {
   return (
-    <section className='max-w-desktop mx-auto'>
-      <section className='px-8 py-2'>
+    <section className=' '>
+      <section className='max-w-desktop  mx-auto px-8 py-2'>
         <Jumbotron />
         <Kegiatan />
       </section>
