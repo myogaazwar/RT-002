@@ -15,11 +15,11 @@ const Accordion = ({
       onClick={() => handleShowAccordion(id)}
     >
       <div className='flex items-center justify-between'>
-        <h3>{title}</h3>
+        <h3 className='md:text-xl'>{title}</h3>
         {showAccordion === id ? (
-          <LuMinusCircle className='text-xl' />
+          <LuMinusCircle className='text-xl lg:text-2xl' />
         ) : (
-          <LuPlusCircle className='text-xl' />
+          <LuPlusCircle className='text-xl lg:text-2xl' />
         )}
       </div>
 
@@ -31,7 +31,7 @@ const Accordion = ({
         }  text-slate-500 text-sm text-justify overflow-hidden   `}
       >
         {typeof description === 'object' && description.visi ? (
-          <div className='pt-2'>
+          <div className='pt-2 md:text-lg'>
             <p>
               <strong>Visi:</strong>
             </p>
@@ -48,7 +48,7 @@ const Accordion = ({
             </ol>
           </div>
         ) : typeof description === 'object' && description.body ? (
-          <div className='pt-2'>
+          <div className='pt-2 md:text-lg'>
             <p>{description.heading}</p>
 
             <ol className='list-disc list-inside mt-2'>
@@ -58,7 +58,7 @@ const Accordion = ({
             </ol>
           </div>
         ) : (
-          <p className='pt-2'>{description}</p>
+          <p className='pt-2 md:text-lg'>{description}</p>
         )}
       </div>
     </div>
