@@ -19,16 +19,14 @@ const Kegiatan = () => {
         </div>
 
         <div className='mt-10 grid gap-y-4 sm:grid-cols-2 sm:gap-x-5 md:grid-cols-3 md:gap-x-4 lg:gap-x-10'>
-          {semuaKegiatan
-            .map((kegiatan) => (
-              <Card
-                key={kegiatan.id}
-                title={kegiatan.title}
-                image={kegiatan.image}
-                description={kegiatan.description.substring(0, 100) + '...'}
-              />
-            ))
-            .slice(0, 3)}
+          {semuaKegiatan.map((kegiatan) => (
+            <Card
+              key={kegiatan.id}
+              title={kegiatan.title}
+              image={kegiatan.image}
+              description={kegiatan.description.substring(0, 100) + '...'}
+            />
+          ))}
         </div>
         <Link to={'/kegiatan'} className='flex items-center justify-center'>
           <Button
