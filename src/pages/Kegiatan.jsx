@@ -52,7 +52,7 @@ const KegiatanPage = () => {
         )}
 
         {daftarKegiatan.length > 0 && (
-          <div className='mt-10 grid sm:grid-cols-2 sm:gap-x-4 sm:gap-y-3 md:grid-cols-3 md:gap-x-5 xl:grid-cols-4 '>
+          <div className='mt-10 gap-y-8 grid sm:grid-cols-2 sm:gap-x-4 sm:gap-y-3 md:grid-cols-3 md:gap-x-5 xl:grid-cols-4 '>
             {filteredKegiatan.map((kegiatan) => (
               <Card
                 key={kegiatan.id}
