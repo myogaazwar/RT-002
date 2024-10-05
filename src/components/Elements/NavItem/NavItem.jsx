@@ -5,6 +5,11 @@ import { NavLink, useLocation } from 'react-router-dom';
 export const NavItem = ({ to, children, classname, onSelect }) => {
   const location = useLocation();
 
+  const isActive =
+    location.pathname === `/${to}` ||
+    (to === 'tentang' && location.pathname === '/struktur-rt') ||
+    (to === 'tentang' && location.pathname === '/prestasi');
+
   if (location.pathname === '/') {
     return (
       <li>
@@ -29,11 +34,9 @@ export const NavItem = ({ to, children, classname, onSelect }) => {
     <li>
       <NavLink
         to={to === 'home' ? '/' : `/${to}`}
-        className={({ isActive }) =>
-          `${classname} cursor-pointer ${
-            isActive ? ' text-bold text-white md:text-main-color' : ''
-          }`
-        }
+        className={`${classname} cursor-pointer ${
+          isActive ? 'text-bold text-white md:text-main-color' : ''
+        }`}
         onClick={onSelect}
       >
         {children}
