@@ -5,6 +5,7 @@ import { Navbar } from './components/navbar/Navbar';
 import KegiatanPage from './pages/Kegiatan';
 import StrukturRtPage from './pages/StrukturRt';
 import Footer from './components/footer/Footer';
+import PrestasiPage from './pages/Prestasi';
 
 const MainLayout = ({ children }) => {
   return (
@@ -42,6 +43,16 @@ function App() {
             element={
               <MainLayout>
                 <StrukturRtPage />
+                <Footer />
+              </MainLayout>
+            }
+          />
+
+          <Route
+            path='/prestasi'
+            element={
+              <MainLayout>
+                <PrestasiPage />
                 <Footer />
               </MainLayout>
             }
