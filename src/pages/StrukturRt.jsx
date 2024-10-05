@@ -51,7 +51,7 @@ const StrukturRtPage = () => {
 
         {dataStrukturRT.length > 0 && (
           <div className='mt-14 grid gap-y-5'>
-            <div className=' grid gap-y-3 min-[584px]:grid-cols-2 min-[584px]:gap-x-4 min-[584px]:gap-y-5 md:mx-auto md:gap-x-10  '>
+            <div className=' grid gap-y-5 min-[584px]:grid-cols-2 min-[584px]:gap-x-4 min-[584px]:gap-y-5 md:mx-auto md:gap-x-10  '>
               {ketuaRT.map((struktur) => (
                 <div key={struktur.id} className='md:w-72'>
                   <Card
@@ -63,7 +63,7 @@ const StrukturRtPage = () => {
               ))}
             </div>
 
-            <div className='grid gap-y-3 min-[584px]:grid-cols-2 min-[584px]:gap-x-4 min-[584px]:gap-y-5 md:mx-auto md:gap-x-10  xl:grid-cols-4 '>
+            <div className='grid gap-y-10 min-[584px]:grid-cols-2 min-[584px]:gap-x-4 min-[584px]:gap-y-5 md:mx-auto md:gap-x-10  xl:grid-cols-4 '>
               {anggotaRT.map((struktur) => (
                 <div key={struktur.id} className='md:w-72'>
                   <Card
