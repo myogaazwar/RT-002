@@ -4,7 +4,7 @@ const Card = ({ title, image, description, children }) => {
   return (
     <div className=' bg-white px-3 py-4 rounded-md shadow-md  hover:scale-105 hover:shadow-lg transition-transform md:flex md:flex-col md:justify-between md:h-full'>
       <img
-        className='rounded-md w-full  md:object-cover md:object-top md:h-48 lg:object-contain lg:h-full '
+        className='rounded-md w-full  md:object-cover md:object-top md:h-48 lg:object-cover lg:h-80 '
         src={image}
         alt={title}
       />
