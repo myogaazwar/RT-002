@@ -9,6 +9,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { FaTasks } from 'react-icons/fa';
 import { GrGallery } from 'react-icons/gr';
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 export const IconContainer = ({ children }) => {
   return <div className='flex flex-col items-center md:hidden'>{children}</div>;
@@ -70,23 +71,30 @@ export const Navbar = () => {
               id='dropdown-tentang'
               className={` ${
                 openDropdown === 'tentang'
-                  ? ' opacity-100 translate-x-12 -translate-y-[65px] h-20 md:block md:translate-y-24 md:translate-x-14 md:w-52 md:h-24    '
-                  : 'opacity-0 translate-x-12 -translate-y-20 h-20 md:translate-x-[900px] md:translate-y-24  md:w-52 md:h-24  '
+                  ? ' opacity-100 pointer-events-auto translate-x-12 -translate-y-[65px] h-20 md:block md:translate-y-24 md:translate-x-14 md:w-52 md:h-24 md:pt-2    '
+                  : 'opacity-0 pointer-events-none translate-x-12 -translate-y-20 h-20 md:translate-x-[900px] md:translate-y-24  md:w-52 md:h-24  '
               }   absolute mb-2 bg-main-color rounded-b-2xl rounded-t-xl w-40  transition duration-400 ease-linear transform border-t-2 border-r-2 border-l-2 border-black md:border-b-2 md:rounded-none  `}
             >
               <ul className='text-center py-2 flex flex-col gap-y-2'>
-                <li className='hover:text-white active:text-white'>
-                  <a
-                    className='underline underline-offset-4 md:text-lg'
-                    href='#'
+                <li className='hover:text-white active:text-white md:text-lg text-sm flex flex-col'>
+                  <NavLink
+                    to={'/struktur-rt'}
+                    className={({ isActive }) =>
+                      isActive ? 'text-bold text-white' : ''
+                    }
                   >
-                    Struktur Organisasi
-                  </a>
+                    Struktur Rukun Tetangga
+                  </NavLink>
                 </li>
-                <li className='hover:text-white active:text-white md:text-lg'>
-                  <a className='underline underline-offset-4' href='#'>
+                <li className='hover:text-white active:text-white md:text-lg text-sm flex flex-col'>
+                  <NavLink
+                    to={'/prestasi'}
+                    className={({ isActive }) =>
+                      isActive ? 'text-bold text-white' : ''
+                    }
+                  >
                     Prestasi & Pencapaian
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
