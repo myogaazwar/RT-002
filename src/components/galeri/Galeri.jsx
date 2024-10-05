@@ -6,6 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import galeri1 from '/galeri/galeri1.png';
+import Button from '../Elements/Button/Button';
+import { Link } from 'react-router-dom';
+import { daftarGaleri } from '../../data/data';
 
 const Galeri = () => {
   return (
@@ -21,28 +24,31 @@ const Galeri = () => {
         className='custom-swiper '
         breakpoints={{
           768: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 20,
           },
         }}
       >
-        <SwiperSlide>
-          <img className='w-full' src={galeri1} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='w-full' src={galeri1} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='w-full' src={galeri1} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img className='w-full' src={galeri1} alt='' />
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <img className='w-full' src={galeri1} alt='' />
-        </SwiperSlide>
+        {daftarGaleri.map((galeri) => (
+          <SwiperSlide key={galeri.id}>
+            <img
+              className='w-full h-80 object-cover '
+              src={galeri.image}
+              alt=''
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
+
+      <Link to={'/galeri'}>
+        <Button
+          classname={
+            'bg-gray-200 mt-5 w-52 hover:scale-105 hover:bg-gray-300  '
+          }
+        >
+          Lihat seluruh galeri...
+        </Button>
+      </Link>
     </section>
   );
 };
