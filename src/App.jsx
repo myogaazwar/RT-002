@@ -12,6 +12,7 @@ import StrukturRtPage from './pages/StrukturRt';
 import Footer from './components/footer/Footer';
 import PrestasiPage from './pages/Prestasi';
 import { useEffect } from 'react';
+import GaleriPage from './pages/Galeri';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -70,6 +71,16 @@ function App() {
             element={
               <MainLayout>
                 <PrestasiPage />
+                <Footer />
+              </MainLayout>
+            }
+          />
+
+          <Route
+            path='/galeri'
+            element={
+              <MainLayout>
+                <GaleriPage />
                 <Footer />
               </MainLayout>
             }
