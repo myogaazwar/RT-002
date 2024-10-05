@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../components/Elements/Card/Card';
-import image1 from '/struktur/image1.jpg';
 
 import { strukturRT } from '../data/data';
 
