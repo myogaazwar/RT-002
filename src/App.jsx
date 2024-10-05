@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from 'react-router-dom';
 import { HomePage } from './pages/Home';
 import NotFound from './pages/NotFound';
 import { Navbar } from './components/navbar/Navbar';
@@ -6,6 +11,17 @@ import KegiatanPage from './pages/Kegiatan';
 import StrukturRtPage from './pages/StrukturRt';
 import Footer from './components/footer/Footer';
 import PrestasiPage from './pages/Prestasi';
+import { useEffect } from 'react';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 const MainLayout = ({ children }) => {
   return (
@@ -20,6 +36,7 @@ function App() {
   return (
     <div>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route
             path='/'
