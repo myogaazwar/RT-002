@@ -3,13 +3,26 @@ import kegiatan2 from '/kegiatan/kegiatan2.jpeg';
 import kegiatan3 from '/kegiatan/kegiatan3.jpg';
 import kegiatan4 from '/kegiatan/kegiatan4.jpg';
 
-import image1 from '/struktur/image1.jpg';
+import ketua from '/struktur/pakRT.jpg';
+import wakil from '/struktur/pakWakil.jpg';
+import sekretaris from '/struktur/sekretaris.jpg';
+import bendahara from '/struktur/bendahara.jpg';
+import siePembangunan from '/struktur/s-pembangunan.jpg';
+import sieSosial from '/struktur/s-sosial.jpg';
+import sieHumas from '/struktur/s-humas.jpg';
+import sieKebersihan from '/struktur/s-kebersihan.jpg';
 
 import prestasi1 from '/prestasi/prestasi1.jpg';
 import prestasi2 from '/prestasi/prestasi2.jpg';
 import prestasi3 from '/prestasi/prestasi3.jpg';
 import prestasi4 from '/prestasi/prestasi4.jpg';
 import prestasi5 from '/prestasi/prestasi5.jpg';
+
+import galeri1 from '/galeri/galeri1.png';
+import galeri2 from '/galeri/galeri2.jpg';
+import galeri3 from '/galeri/galeri3.jpg';
+import galeri4 from '/galeri/galeri4.jpg';
+import galeri5 from '/galeri/galeri5.jpg';
 
 const semuaKegiatan = [
   {
@@ -91,50 +104,50 @@ const tentangKami = [
 const strukturRT = [
   {
     id: 1,
-    image: image1,
+    image: ketua,
     title: 'Budi Santoso',
     description: 'Ketua RT',
   },
   {
     id: 2,
-    image: image1,
+    image: wakil,
     title: 'Andi Wijaya',
     description: 'Wakil Ketua',
   },
   {
     id: 3,
-    image: image1,
+    image: sekretaris,
     title: 'Siti Aminah',
     description: 'Sekretaris',
   },
   {
     id: 4,
-    image: image1,
+    image: bendahara,
     title: 'Dewi Lestari',
     description: 'Bendahara',
   },
   {
     id: 5,
-    image: image1,
+    image: siePembangunan,
     title: 'Rudi Hartono',
     description: 'SIE Pembangunan',
   },
   {
     id: 6,
-    image: image1,
+    image: sieSosial,
     title: 'Sri Wulandari',
     description: 'SIE. Sosial dan Budaya',
   },
   {
     id: 7,
-    image: image1,
+    image: sieHumas,
     title: 'Joko Prasetyo',
     description: 'SIE. Humas',
   },
   {
     id: 8,
-    image: image1,
-    title: 'Faisal Akbar',
+    image: sieKebersihan,
+    title: 'Faisal Anton',
     description: 'SIE. Kebersihan',
   },
 ];
@@ -201,4 +214,38 @@ const prestasiPencapaian = [
   },
 ];
 
-export { semuaKegiatan, tentangKami, strukturRT, prestasiPencapaian };
+const daftarGaleri = [
+  {
+    id: 1,
+    image: galeri1,
+    description: 'Senam bersama ibu-ibu RT 002',
+  },
+  {
+    id: 2,
+    image: galeri2,
+    description: 'Acara 17 Agustus bersama Anak-Anak',
+  },
+  {
+    id: 3,
+    image: galeri3,
+    description: 'Buka bersama di masjid Assalam',
+  },
+  {
+    id: 4,
+    image: galeri4,
+    description: 'Pengajian bapak-bapak RT 002',
+  },
+  {
+    id: 5,
+    image: galeri5,
+    description: 'Shalat ied di masjid Assalam',
+  },
+];
+
+export {
+  semuaKegiatan,
+  tentangKami,
+  strukturRT,
+  prestasiPencapaian,
+  daftarGaleri,
+};
