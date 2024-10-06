@@ -119,7 +119,7 @@ export const Navbar = () => {
             </div>
           </ul>
 
-          <div className='z-50 max-md:absolute max-md:border-2 max-md:border-slate-900 max-md:bg-main-color max-md:dark:bg-second-color max-md:rounded-2xl max-md:px-3 max-md:py-3 max-md:-top-16 max-md:right-7 md:flex md:items-center  md:w-32 md:justify-center transition-transform duration-150'>
+          <div className='z-50 max-md:absolute max-md:border-2 max-md:border-slate-900 max-md:bg-main-color max-md:dark:bg-second-color max-md:rounded-2xl max-md:px-3 max-md:py-3 max-md:-top-16 max-md:left-7 md:flex md:items-center  md:w-32 md:justify-center transition-transform duration-150'>
             <div>
               {theme ? (
                 <MdOutlineLightMode
