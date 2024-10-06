@@ -43,7 +43,7 @@ export const Navbar = () => {
       className={` w-full fixed eb-garamond-medium  z-50 bottom-4  md:top-0  md:shadow-none md:rounded-none max-h-max  `}
     >
       <div className='md:w-full md:bg-white dark:md:bg-dark-mode md:border-b-2  '>
-        <nav className='flex justify-center  text-md h-16 md:mx-auto  md:h-20 md:justify-between md:py-2 md:px-8 transition-all ease-in-out duration-500  md:max-w-desktop   '>
+        <nav className='relative  flex justify-center  text-md h-16 md:mx-auto  md:h-20 md:justify-between md:py-2 md:px-8 transition-all ease-in-out duration-500  md:max-w-desktop   '>
           <img
             className='w-32 max-md:hidden'
             src={theme ? logoDark : logo}
@@ -119,11 +119,11 @@ export const Navbar = () => {
             </div>
           </ul>
 
-          <div className=' items-center hidden md:flex transition-transform duration-150 md:w-32 md:justify-center'>
+          <div className='z-50 max-md:absolute max-md:border-2 max-md:border-slate-900 max-md:bg-main-color max-md:dark:bg-second-color max-md:rounded-2xl max-md:px-3 max-md:py-3 max-md:-top-16 max-md:right-7 md:flex md:items-center  md:w-32 md:justify-center transition-transform duration-150'>
             <div>
               {theme ? (
                 <MdOutlineLightMode
-                  className='text-2xl dark:md:text-white cursor-pointer'
+                  className='text-2xl dark:text-white dark:md:text-white cursor-pointer'
                   onClick={toggleTheme}
                 />
               ) : (
