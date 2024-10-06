@@ -7,7 +7,7 @@ import Footer from '../components/footer/Footer';
 
 export const HomePage = () => {
   return (
-    <>
+    <section className='bg-white dark:bg-dark-mode'>
       <section className='max-w-desktop  mx-auto px-8 py-2'>
         <Jumbotron />
         <Kegiatan />
@@ -16,6 +16,6 @@ export const HomePage = () => {
       <Tentang />
       <Galeri />
       <Footer />
-    </>
+    </section>
   );
 };
