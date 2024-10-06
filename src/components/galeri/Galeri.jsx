@@ -16,7 +16,9 @@ const Galeri = () => {
       id={'galeri'}
       className='h-full px-8 py-2 mt-20  eb-garamond-medium max-w-desktop mx-auto'
     >
-      <h2 className='mb-5 text-center text-2xl md:text-3xl '>GALERI</h2>
+      <h2 className='mb-5 text-center text-2xl md:text-3xl text-black dark:text-white '>
+        GALERI
+      </h2>
       <Swiper
         navigation={true}
         modules={[Navigation]}
@@ -41,13 +43,9 @@ const Galeri = () => {
       </Swiper>
 
       <Link to={'/galeri'}>
-        <Button
-          classname={
-            'bg-gray-300 mt-5 w-60 hover:scale-105 hover:bg-gray-300  '
-          }
-        >
-          Lihat seluruh galeri...
-        </Button>
+        <div className='w-52 text-black dark:text-white text-left mt-5 eb-garamond-medium underline underline-offset-8 hover:scale-105 '>
+          Lihat seluruh galeri..
+        </div>
       </Link>
     </section>
   );
