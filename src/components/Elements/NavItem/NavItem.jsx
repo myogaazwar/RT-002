@@ -20,7 +20,7 @@ export const NavItem = ({ to, children, classname, onSelect }) => {
           spy={true}
           hashSpy={true}
           offset={-80}
-          activeClass='md:text-main-color text-white text-bold'
+          activeClass={` md:text-main-color text-white dark:text-main-color text-bold`}
           className={`${classname} cursor-pointer`}
           onClick={onSelect}
         >
