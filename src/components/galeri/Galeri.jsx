@@ -43,7 +43,7 @@ const Galeri = () => {
       <Link to={'/galeri'}>
         <Button
           classname={
-            'bg-gray-200 mt-5 w-52 hover:scale-105 hover:bg-gray-300  '
+            'bg-gray-300 mt-5 w-60 hover:scale-105 hover:bg-gray-300  '
           }
         >
           Lihat seluruh galeri...
