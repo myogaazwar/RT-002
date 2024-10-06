@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { MdLocationPin } from 'react-icons/md';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import logo from '/logo/logo.png';
+import logoDark from '/logo/logoDark.png';
+import { ThemeContext } from '../../App';
 
 const FooterItem = ({ title, children }) => {
   return (
@@ -23,10 +25,12 @@ const FooterContact = ({ contact, children }) => {
 };
 
 const Footer = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <section
       id={'footer'}
-      className='h-full eb-garamond-medium mt-32 bg-main-color pb-24 '
+      className='h-full eb-garamond-medium mt-32 bg-main-color dark:bg-second-color pb-24 dark:text-white  '
     >
       <main className='px-8 py-2  max-w-desktop mx-auto lg:flex lg:flex-row-reverse lg:justify-between lg:gap-x-20 lg:items-center '>
         <div className='lg:flex lg:gap-x-12  '>
@@ -64,7 +68,7 @@ const Footer = () => {
 
         <div className='mt-10 flex flex-col gap-y-2 text-justify '>
           <div>
-            <img className='w-24' src={logo} alt='' />
+            <img className='w-24' src={theme ? logoDark : logo} alt='' />
             <p className='mt-2'>
               RT002 adalah tempat tinggal yang nyaman dan penuh kebersamaan.
             </p>
