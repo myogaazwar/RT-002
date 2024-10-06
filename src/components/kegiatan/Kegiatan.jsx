@@ -9,8 +9,8 @@ const Kegiatan = () => {
   return (
     <section id={'kegiatan'} className='h-full eb-garamond-medium mt-32 '>
       <main>
-        <div>
-          <h2 className='text-2xl text-center md:text-3xl'>KEGIATAN</h2>
+        <div className='text-black dark:text-white'>
+          <h2 className='text-2xl text-center md:text-3xl '>KEGIATAN</h2>
           <p className='text-sm mt-2 text-justify md:text-center md:text-lg'>
             Setiap kegiatan yang kami lakukan berlandaskan semangat kebersamaan
             untuk menjaga kebersihan, keamanan, dan kenyamanan lingkungan RT002.
