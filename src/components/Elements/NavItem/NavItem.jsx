@@ -35,7 +35,9 @@ export const NavItem = ({ to, children, classname, onSelect }) => {
       <NavLink
         to={to === 'home' ? '/' : `/${to}`}
         className={`${classname} cursor-pointer ${
-          isActive ? 'text-bold text-white md:text-main-color' : ''
+          isActive
+            ? 'text-bold text-white dark:text-main-color md:text-main-color'
+            : ''
         }`}
         onClick={onSelect}
       >
