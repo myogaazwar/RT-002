@@ -39,14 +39,14 @@ const KegiatanPage = () => {
           />
 
           {search.length > 0 && (
-            <p className='mt-2'>
+            <p className='mt-2 dark:text-white'>
               Mencari: <span>{search}</span>
             </p>
           )}
         </div>
 
         {isLoading && (
-          <h1 className='text-center text-2xl mt-10'>
+          <h1 className='text-center text-2xl mt-10 dark:text-white'>
             Loading, Harap tunggu...
           </h1>
         )}
@@ -77,7 +77,7 @@ const KegiatanPage = () => {
         )}
 
         {!isLoading && filteredKegiatan.length === 0 && (
-          <div className='text-xl text-center pt-20'>
+          <div className='text-xl text-center pt-20 dark:text-white'>
             <h1>Maaf kegiatan yang kamu cari tidak ada...</h1>
           </div>
         )}

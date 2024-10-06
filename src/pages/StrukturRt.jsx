@@ -43,7 +43,7 @@ const StrukturRtPage = () => {
         </h1>
 
         {isLoading && (
-          <h1 className='text-center text-2xl mt-10'>
+          <h1 className='text-center text-2xl mt-10 dark:text-white'>
             Loading, Harap tunggu...
           </h1>
         )}
