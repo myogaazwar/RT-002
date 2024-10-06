@@ -5,8 +5,8 @@ import { prestasiPencapaian } from '../data/data';
 
 const Prestasi = ({ title, image, items }) => {
   return (
-    <main className='py-5 grid gap-y-5 px-5 rounded-lg bg-gray-50 shadow-2xl sm:grid-cols-2 sm:gap-x-5 sm:items-center xl:w-[1200px] xl:mx-auto hover:scale-95 transition-transform  '>
-      <div>
+    <main className='py-5 grid gap-y-5 px-5 rounded-xl bg-gray-50 dark:bg-second-color shadow-2xl sm:grid-cols-2 sm:gap-x-5 sm:items-center xl:w-[1200px] xl:mx-auto hover:scale-95 transition-transform  '>
+      <div className='text-black dark:text-white'>
         <h2 className='text-2xl pb-2'>{title}</h2>
         <ul className='list-disc list-inside text-justify'>
           {items.map((item, index) => (
